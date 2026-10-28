@@ -1,0 +1,31 @@
+# --- raw CAUCAFall download (many GB): do NOT commit. Re-download it if you need it.
+# data/ and data_test/ (the small processed photos) ARE committed so a clone can train/test.
+Dataset CAUCAFall/
+
+# --- runtime files ---
+alerts.json
+alerts.json.tmp
+detections.jsonl
+*.log
+
+# --- secrets: never commit keys ---
+.env
+*.key
+
+# --- python ---
+__pycache__/
+*.pyc
+venv/
+.venv/
+
+# --- model files: keep the final small ones, ignore stray checkpoints ---
+*.pt
+!ed_model.pt
+*.onnx
+!ed_model.onnx
+
+# --- editor / OS ---
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

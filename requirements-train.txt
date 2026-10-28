@@ -1,0 +1,11 @@
+# PC: build the dataset, train, evaluate, export, and run the server from ed_model.pt
+torch
+torchvision
+pillow
+numpy
+opencv-python
+onnx
+onnxruntime
+fastapi
+uvicorn
+python-multipart

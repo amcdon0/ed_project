@@ -1,0 +1,9 @@
+# Raspberry Pi (64-bit OS): run the backend from ed_model.onnx. No PyTorch needed.
+# The Pi camera library comes from apt:  sudo apt install python3-picamera2
+# (create the venv with --system-site-packages so it can see picamera2)
+onnxruntime
+numpy
+pillow
+fastapi
+uvicorn
+python-multipart
